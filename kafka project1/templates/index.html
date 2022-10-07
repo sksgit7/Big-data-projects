@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <center>
+    <h1>Bid</h1>
+    <h5>Highest bid : {{ highest_bid }}</h5>
+    <form action = "/", method = 'post'>
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name"><br>
+      <label for="price">Price:</label><br>
+      <input type="text" id="price" name="price"><br><br>
+      <input class="btn btn-primary" type="submit" value="Bid">
+    </form>
+
+    {% if bid_added %}
+    <h4>Bid added!</h4>
+    {% endif %}
+  </center>
+
+  </body>
+
+</html>
