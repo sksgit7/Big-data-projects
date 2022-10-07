@@ -86,7 +86,7 @@ def main(topic):
                 #time.sleep(3)
                 ##
                 cnx = conn.connect(host = "localhost", user = "root",
-                    passwd = "mysql", database = "test")
+                    passwd = "your-password", database = "test")
                 cur = cnx.cursor()
                 query = "insert into bid (name, price, bid_ts) values ( %s, %s, %s)"
                 data = (name,price,bid_ts)
